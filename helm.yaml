@@ -1,0 +1,28 @@
+
+tasks:
+  - title: Rollback Helm deployment
+    description: Rollback a specific Helm deployment to a previous version.
+    content: Rollback Helm deployment {{Deployment Name}} to version {{Version}} in Kubernetes cluster {{Cluster Name}}.
+    integrations:
+      - name: Helm
+        icon_url: https://i0.wp.com/codeblog.dotsandbrackets.com/wp-content/uploads/2018/07/helm-logo.jpg?ssl=1
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
+        
+  - title: List Helm deployments
+    description: List all active Helm deployments in a Kubernetes cluster.
+    content: List all Helm deployments in Kubernetes cluster {{Cluster Name}}.
+    integrations:
+      - name: Helm
+        icon_url: https://i0.wp.com/codeblog.dotsandbrackets.com/wp-content/uploads/2018/07/helm-logo.jpg?ssl=1
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
+
+  - title: Delete Helm deployment
+    description: Delete a specific Helm deployment.
+    content: Delete Helm deployment {{Deployment Name}} from Kubernetes cluster {{Cluster Name}}.
+    integrations:
+      - name: Helm
+        icon_url: https://i0.wp.com/codeblog.dotsandbrackets.com/wp-content/uploads/2018/07/helm-logo.jpg?ssl=1
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png

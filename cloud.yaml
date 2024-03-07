@@ -1,0 +1,65 @@
+tasks:
+  - title: Find stale Kubernetes deployments and upload to JIRA
+    description: This task scans your Kubernetes clusters to identify deployments that haven't been updated in a specified period and automatically creates JIRA tickets for review.
+    content: Find stale Kubernetes deployments and upload to JIRA for review - open a task in project {{JIRA Project Name}} with the details of the stale deployments.
+    integrations:
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
+      - name: JIRA
+        icon_url: https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png
+        
+  - title: Create Compliance report
+    description: This task will discovery users which did not activate MFA on AWS and notify on a specified Slack channel.
+    content: Create a compliance report for users which did not activate MFA
+    integrations:
+      - name: AWS
+        icon_url: https://alvinlal.netlify.app/static/94ca611b10d1b5edd9d6083da83f9045/aws.png
+      - name: Slack
+        icon_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png
+
+  - title: Solve JIRA Tickets related to AWS permissions
+    description: Scan a specific JIRA project for tickets releted to AWS permissions and solve them. Move them to done in case completed.
+    content: "Solve JIRA Tickets related to AWS permissions - scan a specific JIRA project: {{JIRA Project Name}} for tickets releted to AWS permissions and solve them. Move them to done in case completed."
+    integrations:
+      - name: AWS
+        icon_url: https://alvinlal.netlify.app/static/94ca611b10d1b5edd9d6083da83f9045/aws.png
+      - name: JIRA
+        icon_url: https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png
+
+
+  - title: GitHub stale branches cleanup
+    description: This task scans your GitHub repositories to identify stale branches and create PRs for cleanup.
+    content: Cleanup old and stale branches from GitHub repository {Repository Name}.
+    integrations:
+      - name: GitHub
+        icon_url: https://cdn-icons-png.flaticon.com/512/25/25231.png
+
+  - title: AWS security groups audit
+    description: This task checks the AWS security groups for any open ports and reports them.
+    content: Update monthly audit report with reporting open ports in security groups of AWS account {Account Name}.
+    integrations:
+      - name: AWS
+        icon_url: https://alvinlal.netlify.app/static/94ca611b10d1b5edd9d6083da83f9045/aws.png
+
+  - title: Terraform infrastructure documentation
+    description: This task automatically creates infrastructure documentation based on your Terraform configurations.
+    content: Create Infrastructure documentation based on Terraform configurations of project {Project Name}.
+    integrations:
+      - name: Terraform
+        icon_url: https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png
+
+  - title: Kubernetes cluster events monitoring
+    description: This task monitors Kubernetes cluster events and sends alerts for critical ones.
+    content: Monitor and send critical alerts of Kubernetes cluster {Cluster Name} to Slack channel {Channel Name}.
+    integrations:
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
+
+  - title: JIRA ticket updates based on GitHub PRs
+    description: This task updates JIRA ticket status and comments when a linked GitHub PR is merged.
+    content: Update ticket status and leave comments in JIRA project {Project Name} when a linked PR is merged in GitHub repository {Repository Name}.
+    integrations:
+      - name: JIRA
+        icon_url: https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png
+      - name: GitHub
+        icon_url: https://cdn-icons-png.flaticon.com/512/25/25231.png

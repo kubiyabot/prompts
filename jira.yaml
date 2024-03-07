@@ -1,0 +1,22 @@
+
+tasks:
+  - title: Update JIRA ticket comment
+    description: Update a comment in a specific JIRA ticket.
+    content: Update comment {{Comment ID}} in JIRA ticket {{Ticket ID}} to {{Comment}}.
+    integrations:
+      - name: JIRA
+        icon_url: https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png
+
+  - title: Search JIRA tickets
+    description: Search JIRA tickets using a specific query.
+    content: Search JIRA tickets in project {{Project Name}} using query {{Query}}.
+    integrations:
+      - name: JIRA
+        icon_url: https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png
+
+  - title: Download JIRA ticket attachments
+    description: Download all attachments in a specific JIRA ticket.
+    content: Download all attachments in JIRA ticket {{Ticket ID}}.
+    integrations:
+      - name: JIRA
+        icon_url: https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png

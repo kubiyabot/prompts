@@ -1,0 +1,22 @@
+
+tasks:
+  - title: Initialize Terraform from remote repository
+    description: Initialize your Terraform configuration.
+    content: Initialize Terraform by cloning remote git repository {{Repository URL}} and setting up the environment.
+    integrations:
+      - name: Terraform
+        icon_url: https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png
+
+  - title: Destroy Terraform resources on remote repository
+    description: Destroy all resources managed by your Terraform configuration.
+    content: Destroy all resources managed by Terraform configuration in remote git repository {{Repository URL}}.
+    integrations:
+      - name: Terraform
+        icon_url: https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png
+
+  - title: Import Terraform resource
+    description: Import a specific resource into your Terraform configuration.
+    content: Import resource {{Resource Name}} into Terraform configuration in remote git repository {{Repository URL}}.
+    integrations:
+      - name: Terraform
+        icon_url: https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png

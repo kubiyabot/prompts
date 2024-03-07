@@ -1,0 +1,22 @@
+
+tasks:
+  - title: Create Kubernetes Pod
+    description: Create a new Pod in your Kubernetes cluster.
+    content: "Create new Kubernetes Pod {{Pod Name}} in cluster {{Cluster Name}}. Use image {{Image}}. Replicas: {{Replicas}}."
+    integrations:
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
+
+  - title: Delete Kubernetes Service
+    description: Delete a specific Kubernetes Service from your cluster.
+    content: "Delete Kubernetes Service {{Service Name}} from namespace {{Namespace}}"
+    integrations:
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
+
+  - title: Start Kubernetes Job
+    description: Start a specific Kubernetes Job named {{Job Name}} with image {{Image}}.
+    content: Start Kubernetes Job {{Job Name}} in cluster {{Cluster Name}}.
+    integrations:
+      - name: Kubernetes
+        icon_url: https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png

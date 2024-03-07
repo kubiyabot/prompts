@@ -1,0 +1,17 @@
+
+tasks:
+  - title: GitHub stale branches cleanup
+    description: This task scans your GitHub repositories to identify stale branches and create PRs for cleanup.
+    content: Cleanup old and stale branches from GitHub repository {{Repository Name}}.
+    integrations:
+      - name: GitHub
+        icon_url: https://cdn-icons-png.flaticon.com/512/25/25231.png
+
+  - title: JIRA ticket updates based on GitHub PRs
+    description: This task updates JIRA ticket status and comments when a linked GitHub PR is merged.
+    content: Update ticket status and leave comments in JIRA project {{Project Name}} when a linked PR is merged in GitHub repository {{Repository Name}}.
+    integrations:
+      - name: JIRA
+        icon_url: https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png
+      - name: GitHub
+        icon_url: https://cdn-icons-png.flaticon.com/512/25/25231.png
